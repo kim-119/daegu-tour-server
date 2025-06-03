@@ -54,29 +54,22 @@ app.get("/api/places", async (req, res) => {
 })
 
 app.get("/api/search", async (req, res) => {
-  console.log("[Server /api/search] Received query:", req.query)
   const { lang = "ko", keyword, region } = req.query
   const placesData = await getAllPlacesCached()
 
-  if (!placesData) {
-    console.error("[Server /api/search] Places data is not available.")
-    return res.status(500).json({ error: "Failed to load places data." })
-  }
+  if (!placesData) return res.status(500).json({ error: "Failed to load places data." })
 
   let results = []
+
   if (region && region !== "all") {
-    console.log(`[Server /api/search] Filtering by region: ${region}`)
     if (placesData[region] && Array.isArray(placesData[region])) {
       results = [...placesData[region]]
     } else {
-      console.warn(`[Server /api/search] Region key "${region}" not found or not an array in placesData.`)
       results = []
     }
   } else {
     Object.values(placesData).forEach((regionPlaces) => {
-      if (Array.isArray(regionPlaces)) {
-        results.push(...regionPlaces)
-      }
+      if (Array.isArray(regionPlaces)) results.push(...regionPlaces)
     })
   }
 
@@ -84,10 +77,10 @@ app.get("/api/search", async (req, res) => {
     const lowerKeyword = keyword.toLowerCase()
     results = results.filter((place) => {
       if (!place || typeof place.name !== 'object' || typeof place.description !== 'object') return false
-      const nameInLang = place.name[lang] ? place.name[lang].toLowerCase() : ""
-      const nameInKo = place.name.ko ? place.name.ko.toLowerCase() : ""
-      const descInLang = place.description[lang] ? place.description[lang].toLowerCase() : ""
-      const descInKo = place.description.ko ? place.description.ko.toLowerCase() : ""
+      const nameInLang = place.name[lang]?.toLowerCase() || ""
+      const nameInKo = place.name.ko?.toLowerCase() || ""
+      const descInLang = place.description[lang]?.toLowerCase() || ""
+      const descInKo = place.description.ko?.toLowerCase() || ""
       return (
         nameInLang.includes(lowerKeyword) ||
         nameInKo.includes(lowerKeyword) ||
@@ -102,11 +95,9 @@ app.get("/api/search", async (req, res) => {
 
 app.get("/api/stats", async (req, res) => {
   const placesData = await getAllPlacesCached()
-  const visitsData = (await readJSONFile("visits.json")) || {}
+  const visitsData = await readJSONFile("visits.json") || {}
 
-  if (!placesData) {
-    return res.status(500).json({ error: "Failed to load places data." })
-  }
+  if (!placesData) return res.status(500).json({ error: "Failed to load places data." })
 
   const totalPlaces = Object.values(placesData).reduce((sum, region) => sum + (region.length || 0), 0)
   const totalVisits = Object.values(visitsData).reduce((sum, count) => sum + (Number(count) || 0), 0)
@@ -120,24 +111,12 @@ app.get("/api/stats", async (req, res) => {
 
 app.post("/api/places/:id/visit", async (req, res) => {
   const placeId = req.params.id
-  const visitsData = (await readJSONFile("visits.json")) || {}
+  const visitsData = await readJSONFile("visits.json") || {}
   visitsData[placeId] = (visitsData[placeId] || 0) + 1
   if (await writeJSONFile("visits.json", visitsData)) {
     res.json({ message: "Visit recorded", placeId, visitCount: visitsData[placeId] })
   } else {
     res.status(500).json({ error: "Failed to record visit" })
-  }
-})
-
-app.get("/api/translations/:lang", async (req, res) => {
-  const lang = req.params.lang || "ko"
-  const translations = await readJSONFile("translations.json")
-  if (translations && translations[lang]) {
-    res.json(translations[lang])
-  } else if (translations && translations["ko"]) {
-    res.json(translations["ko"])
-  } else {
-    res.status(404).json({ error: "Translations not found" })
   }
 })
 
@@ -149,7 +128,7 @@ app.get("/api/bookmarks", async (req, res) => {
 app.post("/api/bookmark", async (req, res) => {
   const { placeId } = req.body
   if (!placeId) return res.status(400).json({ error: "placeId is required" })
-  const bookmarks = (await readJSONFile("bookmarks.json")) || []
+  const bookmarks = await readJSONFile("bookmarks.json") || []
   if (!bookmarks.includes(placeId)) {
     bookmarks.push(placeId)
     if (await writeJSONFile("bookmarks.json", bookmarks)) {
@@ -164,7 +143,7 @@ app.post("/api/bookmark", async (req, res) => {
 
 app.delete("/api/bookmark/:id", async (req, res) => {
   const placeIdToRemove = req.params.id
-  let bookmarks = (await readJSONFile("bookmarks.json")) || []
+  let bookmarks = await readJSONFile("bookmarks.json") || []
   const initialLength = bookmarks.length
   bookmarks = bookmarks.filter((id) => id !== placeIdToRemove)
   if (bookmarks.length < initialLength) {
@@ -183,19 +162,25 @@ app.get("/api/visits", async (req, res) => {
   res.json(visits || {})
 })
 
-// ✅ 추천 코스 API 추가
+app.get("/api/translations/:lang", async (req, res) => {
+  const lang = req.params.lang || "ko"
+  const translations = await readJSONFile("translations.json")
+  if (translations?.[lang]) {
+    res.json(translations[lang])
+  } else if (translations?.["ko"]) {
+    res.json(translations["ko"])
+  } else {
+    res.status(404).json({ error: "Translations not found" })
+  }
+})
+
 app.get("/api/recommend", async (req, res) => {
   const { theme = "default", duration = "half", lang = "ko" } = req.query
   const placesData = await getAllPlacesCached()
-
-  if (!placesData) {
-    return res.status(500).json({ error: "No places data available." })
-  }
+  if (!placesData) return res.status(500).json({ error: "No places data available." })
 
   const allPlaces = Object.values(placesData).flat().filter(place => place && place.id)
-  if (!allPlaces.length) {
-    return res.status(500).json({ error: "No valid places found." })
-  }
+  if (!allPlaces.length) return res.status(500).json({ error: "No valid places found." })
 
   const shuffled = allPlaces.sort(() => 0.5 - Math.random())
   const courseLength = duration === "full" ? 5 : 3
