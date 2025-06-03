@@ -1,0 +1,212 @@
+{
+  "southwesternregion": [
+    {
+      "id": "arc",
+      "name": {
+        "ko": "디아크",
+        "en": "The ARC",
+        "ja": "ジ・アーク",
+        "zh": "The ARC"
+      },
+      "description": {
+        "ko": "대구 달성군 다사읍에 위치한 디아크(The ARC)는 낙동강과 금호강이 만나는 지점에 세워진 복합문화공간입니다.",
+        "en": "The ARC is a cultural complex located in Dasa-eup, Dalseong-gun, Daegu, built at the meeting point of the Nakdong and Geumho rivers.",
+        "ja": "ジ・アークは大邱市達城郡多斯邑にある複合文化空間で、洛東江と琴湖江が交わる場所に建てられています。",
+        "zh": "The ARC 是位于大邱达城郡多沙邑的文化复合空间，建于洛东江与琴湖江交汇处。"
+      },
+      "image": "/디아크.jfif",
+      "mapLink": "https://www.google.com/maps?q=디아크+대구"
+    },
+    {
+      "id": "dodong-seowon",
+      "name": {
+        "ko": "도동서원",
+        "en": "Dodong Seowon",
+        "ja": "道東書院",
+        "zh": "道东书院"
+      },
+      "description": {
+        "ko": "도동서원은 한훤당 김굉필을 배향하기 위해 건립된 유교 교육기관입니다.",
+        "en": "Dodong Seowon is a Confucian academy built to honor Kim Gweong-pil during the Joseon Dynasty.",
+        "ja": "道東書院は朝鮮時代に金宏弼を祀るために建てられた儒教教育機関です。",
+        "zh": "道东书院是为纪念金宏弼而建的朝鲜时代儒学教育机构。"
+      },
+      "image": "/도동서원.JPG",
+      "mapLink": "https://www.google.com/maps?q=도동서원+대구"
+    },
+    {
+      "id": "dalseong-wetland",
+      "name": {
+        "ko": "달성습지",
+        "en": "Dalseong Wetland",
+        "ja": "達城湿地",
+        "zh": "达城湿地"
+      },
+      "description": {
+        "ko": "달성습지는 다양한 생태계가 공존하는 자연 보호구역입니다.",
+        "en": "Dalseong Wetland is a protected natural area rich in biodiversity including endangered species.",
+        "ja": "達城湿地は絶滅危惧種を含む多様な生態系が共存する保護地域です。",
+        "zh": "达城湿地是一个拥有丰富生态的自然保护区，包含濒危物种。"
+      },
+      "image": "/달성습지.JPG",
+      "mapLink": "https://www.google.com/maps?q=달성습지"
+    },
+    {
+      "id": "daegu-arboretum",
+      "name": {
+        "ko": "대구 수목원",
+        "en": "Daegu Arboretum",
+        "ja": "大邱樹木園",
+        "zh": "大邱树木园"
+      },
+      "description": {
+        "ko": "대구 수목원은 도심 속 자연 학습과 휴식을 제공하는 생태 공간입니다.",
+        "en": "Daegu Arboretum is an urban ecological space offering learning and relaxation.",
+        "ja": "大邱樹木園は都市内で自然を学び、癒しを提供する場所です。",
+        "zh": "大邱树木园是城市中的生态空间，提供学习与休闲功能。"
+      },
+      "image": "/대구 수목원.jpg",
+      "mapLink": "https://www.google.com/maps?q=대구+수목원"
+    }
+  ],
+  "northeasternregion": [
+    {
+      "id": "donghwasa",
+      "name": {
+        "ko": "동화사",
+        "en": "Donghwasa Temple",
+        "ja": "桐華寺",
+        "zh": "桐华寺"
+      },
+      "description": {
+        "ko": "동화사는 팔공산에 위치한 유서 깊은 사찰입니다.",
+        "en": "Donghwasa is a historic Buddhist temple located on Mt. Palgong.",
+        "ja": "桐華寺は八公山に位置する由緒ある仏教寺院です。",
+        "zh": "桐华寺是位于八公山上的历史悠久的佛教寺庙。"
+      },
+      "image": "/동화사.jpg",
+      "mapLink": "https://www.google.com/maps?q=동화사+대구"
+    },
+    {
+      "id": "dodong-cypress",
+      "name": {
+        "ko": "도동측백나무숲",
+        "en": "Dodong Cypress Grove",
+        "ja": "道東イブキの森",
+        "zh": "道东侧柏树林"
+      },
+      "description": {
+        "ko": "도동측백나무숲은 천연기념물 제1호로 등록된 희귀한 자연유산입니다.",
+        "en": "The Dodong Cypress Forest is Natural Monument No.1 and a rare ecological heritage site.",
+        "ja": "道東イブキの森は天然記念物第1号に指定された珍しい自然遺産です。",
+        "zh": "道东侧柏树林是天然纪念物第1号，被誉为稀有的生态遗产。"
+      },
+      "image": "/도동 촉백나무.jpg",
+      "mapLink": "https://www.google.com/maps?q=도동측백나무숲"
+    },
+    {
+      "id": "hajungdo",
+      "name": {
+        "ko": "하중도",
+        "en": "Hajungdo",
+        "ja": "下中島",
+        "zh": "下中岛"
+      },
+      "description": {
+        "ko": "하중도는 계절마다 꽃이 피는 생태공원입니다.",
+        "en": "Hajungdo is an ecological park famous for its seasonal flowers and scenic beauty.",
+        "ja": "下中島は季節ごとに花が咲く生態公園です。",
+        "zh": "下中岛是一座季节性花卉盛开的生态公园。"
+      },
+      "image": "/하중도.webp",
+      "mapLink": "https://www.google.com/maps?q=하중도+대구"
+    },
+    {
+      "id": "gatbawi",
+      "name": {
+        "ko": "갓바위",
+        "en": "Gatbawi Buddha",
+        "ja": "カッバウィ仏像",
+        "zh": "笠岩佛像"
+      },
+      "description": {
+        "ko": "갓바위는 돌로 만든 갓을 쓴 석불좌상입니다.",
+        "en": "Gatbawi is a seated stone Buddha statue wearing a traditional Korean stone hat.",
+        "ja": "カッバウィは石の笠をかぶった座った仏像です。",
+        "zh": "笠岩是一尊戴石笠的石坐佛像。"
+      },
+      "image": "/갓바위.jpg",
+      "mapLink": "https://www.google.com/maps?q=갓바위+팔공산"
+    }
+  ],
+  "JungguDistrict": [
+    {
+      "id": "yangnyeongsi-museum",
+      "name": {
+        "ko": "약령시 박물관",
+        "en": "Yangnyeongsi Museum",
+        "ja": "薬令市博物館",
+        "zh": "药令市博物馆"
+      },
+      "description": {
+        "ko": "약령시 박물관은 한의약 전통을 체험할 수 있는 공간입니다.",
+        "en": "Yangnyeongsi Museum is a space where visitors can experience traditional Korean medicine.",
+        "ja": "薬令市博物館は韓医学の伝統を体験できる場所です。",
+        "zh": "药令市博物馆是体验韩医学传统的地方。"
+      },
+      "image": "/ 약령시 박물관.JPG",
+      "mapLink": "https://www.google.com/maps?q=약령시+박물관+대구"
+    },
+    {
+      "id": "dongseongro",
+      "name": {
+        "ko": "동성로",
+        "en": "Dongseong-ro",
+        "ja": "東城路",
+        "zh": "东城路"
+      },
+      "description": {
+        "ko": "동성로는 대구의 대표적인 쇼핑 거리입니다.",
+        "en": "Dongseong-ro is Daegu’s premier shopping and entertainment street.",
+        "ja": "東城路は大邱の代表的なショッピング通りです。",
+        "zh": "东城路是大邱著名的购物与娱乐街区。"
+      },
+      "image": "/동성로.jfif",
+      "mapLink": "https://www.google.com/maps?q=동성로+대구"
+    },
+    {
+      "id": "gyeongsang-gamyeong",
+      "name": {
+        "ko": "경상감영 공원",
+        "en": "Gyeongsang Gamyeong Park",
+        "ja": "慶尚監営公園",
+        "zh": "庆尚监营公园"
+      },
+      "description": {
+        "ko": "경상감영 공원은 조선시대 관아 건물이 복원된 역사공원입니다.",
+        "en": "This park features restored government buildings from the Joseon Dynasty.",
+        "ja": "この公園は朝鮮時代の官庁建物が復元された歴史公園です。",
+        "zh": "该公园还原了朝鲜时代的官署建筑，是历史公园。"
+      },
+      "image": "/경삼감영 공원.jfif",
+      "mapLink": "https://www.google.com/maps?q=경상감영공원+대구"
+    },
+    {
+      "id": "228-park",
+      "name": {
+        "ko": "2.28 중앙공원",
+        "en": "2.28 Central Park",
+        "ja": "2.28中央公園",
+        "zh": "2.28中央公园"
+      },
+      "description": {
+        "ko": "2.28 중앙공원은 민주운동을 기념하기 위한 도심 공원입니다.",
+        "en": "2.28 Central Park commemorates the 1960 democratic student movement in Daegu.",
+        "ja": "2.28中央公園は1960年の民主化運動を記念する都市公園です。",
+        "zh": "2.28中央公园是为纪念1960年民主化运动而设立的城市公园。"
+      },
+      "image": "/2.28 중앙공원.jpg",
+      "mapLink": "https://www.google.com/maps?q=2.28+중앙공원+대구"
+    }
+  ]
+}

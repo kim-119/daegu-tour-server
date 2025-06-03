@@ -1,0 +1,338 @@
+{
+  "ko": {
+    "nav": {
+      "home": "홈",
+      "regions": "지역별 관광",
+      "popular": "인기 관광지",
+      "recommend": "추천 코스"
+    },
+    "placeCard": {
+      "mapButton": "지도 보기",
+      "addBookmark": "즐겨찾기 추가",
+      "removeBookmark": "즐겨찾기 제거"
+    },
+    "footer": {
+      "companyName": "대구 투어 가이드",
+      "description": "대구의 아름다운 관광지와 문화를 소개하는 공식 가이드입니다. 역사적인 명소부터 자연 경관, 쇼핑과 맛집까지 대구의 모든 것을 경험해보세요.",
+      "quickLinks": "빠른 링크",
+      "contactUs": "연락처",
+      "address": "대구광역시 중구 동성로 1길",
+      "phone": "+82 53-123-4567",
+      "email": "info@daegutour.com",
+      "copyright": "&copy; 2025 대구 투어 가이드. All Rights Reserved."
+    },
+    "status": {
+      "noResults": "표시할 관광지가 없습니다.",
+      "noPopularPlaces": "인기 관광지 정보가 없습니다.",
+      "noRecommendation": "추천할 수 있는 관광지가 없습니다."
+    },
+    "error": {
+      "search": "검색 중 오류가 발생했습니다.",
+      "loadPopular": "인기 관광지 로딩 중 오류 발생.",
+      "recommend": "추천 코스 생성 중 오류 발생."
+    },
+    "searchResults": {
+      "title": "검색 결과",
+      "allPlacesTitle": "모든 관광지",
+      "countPrefix": "총",
+      "countSuffix": "개의 관광지가 있습니다"
+    },
+    "nav": {
+        "home": "홈",
+        "regions": "지역별 관광",
+        "popular": "인기 관광지",
+        "recommend": "추천 코스",
+        "stats": "여행 통계",
+        "bookmarks": "내 즐겨찾기"
+    },
+    "placeCard": {
+        "mapButton": "지도 보기",
+        "addBookmark": "즐겨찾기 추가",
+        "removeBookmark": "즐겨찾기 제거"
+    },
+    "footer": {
+        "companyName": "대구 투어 가이드",
+        "description": "대구의 아름다운 관광지와 문화를 소개하는 공식 가이드입니다. 역사적인 명소부터 자연 경관, 쇼핑과 맛집까지 대구의 모든 것을 경험해보세요.",
+        "quickLinks": "빠른 링크",
+        "contactUs": "연락처",
+        "address": "대구광역시 중구 동성로 1길",
+        "phone": "+82 53-123-4567",
+        "email": "info@daegutour.com",
+        "copyright": "&copy; 2025 대구 투어 가이드. All Rights Reserved."
+    },
+    "status": {
+        "noResults": "표시할 관광지가 없습니다.",
+        "noPopularPlaces": "인기 관광지 정보가 없습니다.",
+        "noRecommendation": "추천할 수 있는 관광지가 없습니다.",
+        "noBookmarks": "즐겨찾기한 관광지가 없습니다."
+    },
+    "error": {
+        "search": "검색 중 오류가 발생했습니다.",
+        "loadPopular": "인기 관광지 로딩 중 오류 발생.",
+        "recommend": "추천 코스 생성 중 오류 발생.",
+        "loadBookmarks": "즐겨찾기 로딩 중 오류 발생."
+    },
+    "searchResults": {
+        "title": "검색 결과",
+        "allPlacesTitle": "모든 관광지",
+        "countPrefix": "총",
+        "countSuffix": "개의 관광지가 있습니다"
+    },
+    "myBookmarks": {
+        "title": "내 즐겨찾기",
+        "description": "즐겨찾기한 관광지 목록입니다."
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "regions": "Regional Tourism",
+      "popular": "Popular Attractions",
+      "recommend": "Recommended Courses"
+    },
+    "placeCard": {
+      "mapButton": "View on Map",
+      "addBookmark": "Add to Bookmarks",
+      "removeBookmark": "Remove from Bookmarks"
+    },
+    "footer": {
+      "companyName": "Daegu Tour Guide",
+      "description": "The official guide introducing the beautiful sights and culture of Daegu. Experience everything from historical landmarks to natural scenery, shopping, and fine dining.",
+      "quickLinks": "Quick Links",
+      "contactUs": "Contact Us",
+      "address": "1 Dongseong-ro, Jung-gu, Daegu",
+      "phone": "+82 53-123-4567",
+      "email": "info@daegutour.com",
+      "copyright": "&copy; 2025 Daegu Tour Guide. All Rights Reserved."
+    },
+     "status": {
+      "noResults": "No attractions to display.",
+      "noPopularPlaces": "No popular attractions information available.",
+      "noRecommendation": "No attractions available for recommendation."
+    },
+    "error": {
+      "search": "An error occurred during search.",
+      "loadPopular": "Error loading popular attractions.",
+      "recommend": "Error generating course recommendation."
+    },
+    "searchResults": {
+      "title": "Search Results",
+      "allPlacesTitle": "All Attractions",
+      "countPrefix": "Total",
+      "countSuffix": "attractions found"
+    },
+    "nav": {
+        "home": "Home",
+        "regions": "Regional Tourism",
+        "popular": "Popular Attractions",
+        "recommend": "Recommended Courses",
+        "stats": "Travel Stats",
+        "bookmarks": "My Bookmarks"
+    },
+    "placeCard": {
+        "mapButton": "View on Map",
+        "addBookmark": "Add to Bookmarks",
+        "removeBookmark": "Remove from Bookmarks"
+    },
+    "footer": {
+        "companyName": "Daegu Tour Guide",
+        "description": "The official guide introducing the beautiful sights and culture of Daegu. Experience everything from historical landmarks to natural scenery, shopping, and fine dining.",
+        "quickLinks": "Quick Links",
+        "contactUs": "Contact Us",
+        "address": "1 Dongseong-ro, Jung-gu, Daegu",
+        "phone": "+82 53-123-4567",
+        "email": "info@daegutour.com",
+        "copyright": "&copy; 2025 Daegu Tour Guide. All Rights Reserved."
+    },
+     "status": {
+        "noResults": "No attractions to display.",
+        "noPopularPlaces": "No popular attractions information available.",
+        "noRecommendation": "No attractions available for recommendation.",
+        "noBookmarks": "You have no bookmarked attractions."
+    },
+    "error": {
+        "search": "An error occurred during search.",
+        "loadPopular": "Error loading popular attractions.",
+        "recommend": "Error generating course recommendation.",
+        "loadBookmarks": "Error loading bookmarks."
+    },
+    "searchResults": {
+        "title": "Search Results",
+        "allPlacesTitle": "All Attractions",
+        "countPrefix": "Total",
+        "countSuffix": "attractions found"
+    },
+    "myBookmarks": {
+        "title": "My Bookmarks",
+        "description": "List of your bookmarked attractions."
+    }
+  },
+  "ja": {
+    "nav": {
+      "home": "ホーム",
+      "regions": "地域別観光",
+      "popular": "人気観光地",
+      "recommend": "おすすめコース"
+    },
+    "placeCard": {
+      "mapButton": "地図で見る",
+      "addBookmark": "お気に入りに追加",
+      "removeBookmark": "お気に入りから削除"
+    },
+    "footer": {
+      "companyName": "大邱ツアーガイド",
+      "description": "大邱の美しい観光地と文化を紹介する公式ガイドです。歴史的な名所から自然景観、ショッピングやグルメまで、大邱のすべてを体験してください。",
+      "quickLinks": "クイックリンク",
+      "contactUs": "お問い合わせ",
+      "address": "大邱広域市中区東城路1ギル",
+      "phone": "+82 53-123-4567",
+      "email": "info@daegutour.com",
+      "copyright": "&copy; 2025 大邱ツアーガイド. All Rights Reserved."
+    },
+     "status": {
+      "noResults": "表示する観光地がありません。",
+      "noPopularPlaces": "人気観光地の情報がありません。",
+      "noRecommendation": "推薦できる観光地がありません。"
+    },
+    "error": {
+      "search": "検索中にエラーが発生しました。",
+      "loadPopular": "人気観光地の読み込み中にエラーが発生しました。",
+      "recommend": "おすすめコースの生成中にエラーが発生しました。"
+    },
+    "searchResults": {
+      "title": "検索結果",
+      "allPlacesTitle": "すべての観光地",
+      "countPrefix": "合計",
+      "countSuffix": "件の観光地があります"
+    },
+    "nav": {
+        "home": "ホーム",
+        "regions": "地域別観光",
+        "popular": "人気観光地",
+        "recommend": "おすすめコース",
+        "stats": "旅行統計",
+        "bookmarks": "お気に入り"
+    },
+    "placeCard": {
+        "mapButton": "地図で見る",
+        "addBookmark": "お気に入りに追加",
+        "removeBookmark": "お気に入りから削除"
+    },
+    "footer": {
+        "companyName": "大邱ツアーガイド",
+        "description": "大邱の美しい観光地と文化を紹介する公式ガイドです。歴史的な名所から自然景観、ショッピングやグルメまで、大邱のすべてを体験してください。",
+        "quickLinks": "クイックリンク",
+        "contactUs": "お問い合わせ",
+        "address": "大邱広域市中区東城路1ギル",
+        "phone": "+82 53-123-4567",
+        "email": "info@daegutour.com",
+        "copyright": "&copy; 2025 大邱ツアーガイド. All Rights Reserved."
+    },
+     "status": {
+        "noResults": "表示する観光地がありません。",
+        "noPopularPlaces": "人気観光地の情報がありません。",
+        "noRecommendation": "推薦できる観光地がありません。",
+        "noBookmarks": "お気に入りに登録された観光地はありません。"
+    },
+    "error": {
+        "search": "検索中にエラーが発生しました。",
+        "loadPopular": "人気観光地の読み込み中にエラーが発生しました。",
+        "recommend": "おすすめコースの生成中にエラーが発生しました。",
+        "loadBookmarks": "お気に入りの読み込み中にエラーが発生しました。"
+    },
+    "searchResults": {
+        "title": "検索結果",
+        "allPlacesTitle": "すべての観光地",
+        "countPrefix": "合計",
+        "countSuffix": "件の観光地があります"
+    },
+    "myBookmarks": {
+        "title": "お気に入り",
+        "description": "お気に入りに登録した観光地のリストです。"
+    }
+  },
+  "zh": {
+    "nav": {
+      "home": "主页",
+      "regions": "地区旅游",
+      "popular": "热门景点",
+      "recommend": "推荐路线"
+    },
+    "placeCard": {
+      "mapButton": "在地图上查看",
+      "addBookmark": "添加到收藏",
+      "removeBookmark": "从收藏中移除"
+    },
+    "footer": {
+      "companyName": "大邱旅游指南",
+      "description": "介绍大邱美丽景点和文化的官方指南。从历史名胜到自然风光，从购物到美食，体验大邱的一切。",
+      "quickLinks": "快速链接",
+      "contactUs": "联系我们",
+      "address": "大邱广域市中区东城路1街",
+      "phone": "+82 53-123-4567",
+      "email": "info@daegutour.com",
+      "copyright": "&copy; 2025 大邱旅游指南. 版权所有."
+    },
+    "status": {
+      "noResults": "没有可显示的景点。",
+      "noPopularPlaces": "暂无热门景点信息。",
+      "noRecommendation": "没有可推荐的景点。"
+    },
+    "error": {
+      "search": "搜索过程中发生错误。",
+      "loadPopular": "加载热门景点时出错。",
+      "recommend": "生成推荐路线时出错。"
+    },
+    "searchResults": {
+      "title": "搜索结果",
+      "allPlacesTitle": "所有景点",
+      "countPrefix": "共",
+      "countSuffix": "个景点"
+    },
+    "nav": {
+        "home": "主页",
+        "regions": "地区旅游",
+        "popular": "热门景点",
+        "recommend": "推荐路线",
+        "stats": "旅游统计",
+        "bookmarks": "我的收藏"
+    },
+    "placeCard": {
+        "mapButton": "在地图上查看",
+        "addBookmark": "添加到收藏",
+        "removeBookmark": "从收藏中移除"
+    },
+    "footer": {
+        "companyName": "大邱旅游指南",
+        "description": "介绍大邱美丽景点和文化的官方指南。从历史名胜到自然风光，从购物到美食，体验大邱的一切。",
+        "quickLinks": "快速链接",
+        "contactUs": "联系我们",
+        "address": "大邱广域市中区东城路1街",
+        "phone": "+82 53-123-4567",
+        "email": "info@daegutour.com",
+        "copyright": "&copy; 2025 大邱旅游指南. 版权所有."
+    },
+    "status": {
+        "noResults": "没有可显示的景点。",
+        "noPopularPlaces": "暂无热门景点信息。",
+        "noRecommendation": "没有可推荐的景点。",
+        "noBookmarks": "您没有收藏任何景点。"
+    },
+    "error": {
+        "search": "搜索过程中发生错误。",
+        "loadPopular": "加载热门景点时出错。",
+        "recommend": "生成推荐路线时出错。",
+        "loadBookmarks": "加载收藏时出错。"
+    },
+    "searchResults": {
+        "title": "搜索结果",
+        "allPlacesTitle": "所有景点",
+        "countPrefix": "共",
+        "countSuffix": "个景点"
+    },
+    "myBookmarks": {
+        "title": "我的收藏",
+        "description": "您收藏的景点列表。"
+    }
+  }
+}
