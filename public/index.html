@@ -37,5 +37,30 @@
             
         </div>
     </header>
+        <!-- 메인 배너 -->
+    <section id="home" class="hero-banner">
+        <div class="hero-content">
+            <h2 id="heroTitle" data-text="hero.title">대구의 아름다움을 발견하세요</h2>
+            <p id="heroDescription" data-text="hero.description">역사적인 명소부터 자연의 경이로움, 활기찬 도시 생활까지 - 대구의 모든 것을 경험해보세요</p>
+            <div class="hero-buttons">
+                <a href="#search" class="btn" data-text="hero.buttons.regions">관광지 검색하기</a>
+                <a href="#recommend" class="btn btn-outline" data-text="hero.buttons.recommend">추천 코스 보기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 검색 섹션 -->
+    <section id="search" class="search-section">
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="관광지 검색..." data-placeholder="search.placeholder">
+            <select id="regionFilter" class="filter-select">
+                <option value="all" data-text="search.all">전체 지역</option>
+                <option value="southwesternregion" data-text="regions.southwesternregion_short">동남/서남권</option>
+                <option value="northeasternregion" data-text="regions.northeasternregion_short">동북권</option>
+                <option value="JungguDistrict" data-text="regions.JungguDistrict_short">중구권</option>
+            </select>
+            <button id="searchBtn" class="search-btn" data-text="search.button"><i class="fas fa-search"></i> 검색</button>
+        </div>
+    </section>
 </body>
 </html>
