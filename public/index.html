@@ -62,5 +62,47 @@
             <button id="searchBtn" class="search-btn" data-text="search.button"><i class="fas fa-search"></i> 검색</button>
         </div>
     </section>
+
+     <!-- 지역별 관광 섹션 -->
+    <section id="regions" class="section regions-section">
+        <div class="section-title">
+            <h2 data-text="regions.title">지역별 관광지</h2>
+            <p data-text="regions.description">대구의 다양한 지역별 특색있는 관광지를 만나보세요</p>
+        </div>
+        <div class="regions-grid">
+            <div class="region-card" onclick="searchPlacesByRegion('southwesternregion')">
+                <div class="region-img"><img src="디아크.jfif" alt="동남/서남권"></div>
+                <div class="region-content">
+                    <div class="region-icon"><i class="fas fa-leaf"></i></div>
+                    <h3 data-text="regions.southwesternregion">동남/서남권</h3>
+                    <p data-text="regions.southwesternregion_desc">자연과 문화의 조화를 느낄 수 있는 지역</p>
+                </div>
+            </div>
+            <div class="region-card" onclick="searchPlacesByRegion('northeasternregion')">
+                <div class="region-img"><img src="동화사.jpg" alt="동북권"></div>
+                <div class="region-content">
+                    <div class="region-icon"><i class="fas fa-mountain"></i></div>
+                    <h3 data-text="regions.northeasternregion">동북권</h3>
+                    <p data-text="regions.northeasternregion_desc">역사와 전통의 숨결이 살아있는 지역</p>
+                </div>
+            </div>
+            <div class="region-card" onclick="searchPlacesByRegion('JungguDistrict')">
+                <div class="region-img"><img src="동성로.jfif" alt="중구권"></div>
+                <div class="region-content">
+                    <div class="region-icon"><i class="fas fa-city"></i></div>
+                    <h3 data-text="regions.JungguDistrict">중구권</h3>
+                    <p data-text="regions.JungguDistrict_desc">도심 속 문화와 쇼핑의 중심지</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 인기 관광지 섹션 -->
+    <section id="popular" class="section popular-section">
+        <div class="section-title">
+            <h2 data-text="popular.title">인기 관광지</h2>
+            <p data-text="popular.description">대구에서 가장 사랑받는 관광지를 소개합니다</p>
+        </div>
+        <div id="popularGrid" class="popular-grid"></div>
+    </section>
 </body>
 </html>
