@@ -124,5 +124,51 @@
             <div id="resultsGrid" class="results-grid"></div>
         </div>
     </section>
+
+    <!-- AI 추천 코스 섹션 -->
+    <section id="recommend" class="ai-recommend-section section">
+        <div class="ai-recommend-container">
+            <div class="section-title">
+                <h2 data-text="recommend.title">AI 맞춤 코스 추천</h2>
+                <p data-text="recommend.description">당신의 취향에 맞는 최적의 여행 코스를 추천해드립니다</p>
+            </div>
+            <div class="ai-form">
+                <div class="form-group">
+                    <label for="themeSelect" data-text="recommend.theme">여행 테마</label>
+                    <select id="themeSelect">
+                        <option value="nature" data-text="recommend.themes.nature">🌿 자연 힐링</option>
+                        <option value="history" data-text="recommend.themes.history">🏛️ 역사 문화</option>
+                        <option value="culture" data-text="recommend.themes.culture">🎭 문화 체험</option>
+                        <option value="shopping" data-text="recommend.themes.shopping">🛍️ 쇼핑 맛집</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="durationSelect" data-text="recommend.duration">여행 기간</label>
+                    <select id="durationSelect">
+                        <option value="half" data-text="recommend.durations.half">반나절 코스</option>
+                        <option value="full" data-text="recommend.durations.full">하루 종일</option>
+                    </select>
+                </div>
+                <div class="form-group" style="align-self: flex-end;">
+                    <button class="btn" onclick="getRecommendation()" data-text="recommend.button"><i class="fas fa-magic"></i> 코스 추천받기</button>
+                </div>
+            </div>
+            <div id="aiCourseBox" class="ai-result" style="display: none;"></div>
+        </div>
+    </section>
+
+    <!-- 통계 섹션 -->
+    <section id="stats" class="stats-section section">
+        <div class="section-title">
+             <h2 data-text="stats.title" style="color: var(--white);">여행 통계</h2>
+             <p data-text="stats.description" style="color: var(--light);">대구 관광의 다양한 정보를 확인하세요</p>
+        </div>
+        <div class="stats-container">
+            <div class="stat-card"><i class="fas fa-map-marked-alt"></i><h3 id="totalPlaces">0</h3><p data-text="stats.totalPlaces">총 관광지</p></div>
+            <div class="stat-card"><i class="fas fa-eye"></i><h3 id="totalVisits">0</h3><p data-text="stats.totalVisits">총 조회수</p></div>
+            <div class="stat-card"><i class="fas fa-star"></i><h3 id="mostPopularPlaceName">-</h3><p data-text="stats.mostPopular">가장 인기있는 곳</p></div>
+            <div class="stat-card"><i class="fas fa-users"></i><h3 id="activeUsers">0</h3><p data-text="stats.activeUsers">오늘 방문자 (예시)</p></div>
+        </div>
+    </section>
 </body>
 </html>
